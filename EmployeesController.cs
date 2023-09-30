@@ -65,7 +65,7 @@ namespace website.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CourseId"] = new SelectList(_context.Courses, "CourseId", "CourseName", employee.CourseId);
+            ViewData["CourseId"] = new SelectList(_context.Courses, "CourseId", "CourseNameclass", employee.CourseId);
             return View(employee);
         }
 
@@ -82,7 +82,7 @@ namespace website.Controllers
             {
                 return NotFound();
             }
-            ViewData["CourseId"] = new SelectList(_context.Courses, "CourseId", "CourseName", employee.CourseId);
+            ViewData["CourseId"] = new SelectList(_context.Courses, "CourseIdclass", "CourseName", employee.CourseId);
             return View(employee);
         }
 
