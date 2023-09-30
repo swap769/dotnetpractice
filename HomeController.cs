@@ -8,7 +8,7 @@ using static website.Models.Studentdata;
 
 namespace website.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -51,7 +51,7 @@ namespace website.Controllers
             studentInfo.Add(new StudentInfo { Id = 101, StdId = 2, FatherName = "Ramesh", Address = "Greater Noida" });
             studentInfo.Add(new StudentInfo { Id = 102, StdId = 3, FatherName = "Suresh", Address = "Merrut" });
             studentInfo.Add(new StudentInfo { Id = 103, StdId = 4, FatherName = "Ganesh", Address = "Delhi" });
-            studentInfo.Add(new StudentInfo { Id = 104, StdId = 5, FatherName = "Hitesh", Address = "Haryana" });
+            studentInfo.Add(new StudentInfo { Id = 109, StdId = 5, FatherName = "Hitesh", Address = "Haryana" });
 
         }
 
