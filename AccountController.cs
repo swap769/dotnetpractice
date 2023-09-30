@@ -76,8 +76,8 @@ namespace website.Controllers.Account
             }
             else
             {
-                TempData["errorMessage"] = "Email already exists";
-                return View();
+                TempData["errorMessage"] = "your email is already exists";
+                return View("exists);
             }
             return View();
         }
