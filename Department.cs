@@ -9,5 +9,7 @@ namespace website.Models
 
         [Required]
         public string? DepartmentName { get; set; }
+        [Required]
+        public string? DepartmentCategory { get; set; }
     }
 }
