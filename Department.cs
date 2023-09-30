@@ -6,8 +6,9 @@ namespace website.Models
     {
         [Key]
         public int DepartmentId { get; set; }
-
         [Required]
         public string? DepartmentName { get; set; }
+        [Required]
+        public string? student { get; set; }
     }
 }
