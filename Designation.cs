@@ -9,5 +9,7 @@ namespace website.Models
 
         [Required]
         public string? DesignationName { get; set; }
+        [Required]
+        public string? DesignationTypes { get; set; }
     }
 }
