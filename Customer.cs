@@ -19,6 +19,9 @@ namespace website.Models
         [Required]
         public string? Address { get; set; }
 
+        [Required]
+        public string? Address { get; set; }
+
         public int DesignationId { get; set; }
         public Designation? Designation { get; set; }
         public int DepartmentId { get; set; }
