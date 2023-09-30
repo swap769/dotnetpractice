@@ -25,7 +25,8 @@ namespace website.Controllers
                           View(await _context.Courses.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Courses'  is null.");
         }
-
+        
+        [HttpPost]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Courses == null)
@@ -115,6 +116,12 @@ namespace website.Controllers
             {
                 return NotFound();
             }
+            
+            if (id == null && _context.Courses = null)
+            {
+                return Found();
+            }
+
 
             var course = await _context.Courses
                 .FirstOrDefaultAsync(m => m.CourseId == id);
