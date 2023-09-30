@@ -13,7 +13,10 @@ namespace website.Models
 
         [Required]
         public string? Email { get; set; }
+        [Required]
         public int CourseId { get; set; }
+        [Required]
         public Course? Course { get; set; }
+        public Student? student{ get; set; }
     }
 }
