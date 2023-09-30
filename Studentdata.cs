@@ -1,6 +1,6 @@
 ﻿namespace website.Models
 {
-    public class Studentdata
+    public class Studentdatas
     {
         public class Student
         {
@@ -8,7 +8,7 @@
             public string? Name { get; set; }
             public string? Stream { get; set; }
         }
-        public class StudentInfo
+        public class StudentInfos
         {
             public int Id { get; set; }
             public int StdId { get; set; }
@@ -16,7 +16,7 @@
             public string? Address { get; set; }
         }
 
-        public class StudentViewModel {
+        public class StudentViewModels {
          public Student? studentVm { get; set; }
          public StudentInfo? studentInfoVm { get; set; }
         }
