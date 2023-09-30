@@ -9,5 +9,8 @@ namespace website.Models
 
         [Required]
         public string? CourseName { get; set; }
+
+        [Required]
+        public string? Coursetype { get; set; }
     }
 }
